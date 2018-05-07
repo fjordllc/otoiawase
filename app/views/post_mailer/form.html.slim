@@ -1,0 +1,4 @@
+p #{@form.site}のフォームに投稿がありました。
+p こちらのフォームからのメールの転送を行いますか？
+p 許可する場合は下記のリンクをクリックしてください。
+p= link_to confirmation_url(token: @form.token), confirmation_url(token: @form.token)
